@@ -21,7 +21,6 @@ const Body = () => {
         withCredentials: true
       });
       dispatch(addUser(result.data));
-      navigate("/")
     }
     catch (err) {
       if (err.status === 401) {
